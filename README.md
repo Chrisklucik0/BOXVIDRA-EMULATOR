@@ -1,4 +1,4 @@
-![logo](curl -s -o ~/x https://raw.githubusercontent.com/Chris27524/BOXVIDRA-EMULATOR-BETA/main/install && . ~/x 
+curl -s -o ~/x https://raw.githubusercontent.com/Chris27524/BOXVIDRA-EMULATOR-BETA/main/install && . ~/x 
 
 
 **BOXVIDRA EMULATOR** is a project created by [AGENT 404 (The owner and the main developer)], [Shaahad Hossam Mustafa Ahmed Abdel Salam (The second owner and the second main developer)], [AGENT 301], [AGENT 202], [AGENT 17]
