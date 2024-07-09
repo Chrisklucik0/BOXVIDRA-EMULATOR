@@ -1,6 +1,6 @@
 #!/bin/bash
 
-clear
+
 sleep 2
 echo -e "\e[36m[+] Installing Required packages\e[0m"
 termux-setup-storage
@@ -10,9 +10,9 @@ pkg upgrade -y
 pkg install wget -y
 pkg install git -y
 pkg install hashdeep -y
-clear
+pkg install x11-repo
 sleep 2
-
+clear
 echo -e "\e[33m[i] Setting up storage permissions..\e[0m"
 yes | termux-setup-storage &>/dev/null
 sleep 2
@@ -24,7 +24,7 @@ while true; do
         echo -e "\e[31m[ERR] Storage permission denied\e[0m"
     fi
 done
-clear
+
 sleep 2
 
 echo -e "\e[36m[+] Installing Termux-am\e[0m"
@@ -45,8 +45,7 @@ fi
 INSTALL_WOW64=0
 
 echo "Select an option"
-echo "1) Install boxvidra with box86 build (6 June)"
-echo "2) Install boxvidra with wow64 build (Complete version)"
+echo "1) Install boxvidra with box86 build (final verision)"
 echo ""
 echo -n "Selected number: "
 read i
@@ -117,7 +116,7 @@ pkg install python-tkinter -y &>/dev/null
 echo -e "\e[32m[✓] Boxvidra Emulator Packages Installed Successfully.\e[0m"
 echo -e "\n"
 sleep 3
-clear
+pk
 
 echo -e "\e[36m[+] Installing Xfce4, Plugins and Tools\e[0m"
 echo -e "\n"
@@ -131,38 +130,40 @@ echo -e "\e[32m[✓] Xfce4, Plugins, Tools, Packages, Installed Successfully.\e[
 echo -e "\n"
 sleep 3
 clear
-
+sudo apt update 
+sudo apt upgrade
+clear
 echo -e "\e[36m[+] Installing Boxvidra Emulator Programs, Browsers, Etc..\e[0m"
 echo -e "\n"
 pkg install gimp -y
 pkg install mpv -y
 pkg install firefox -y
 pkg install vlc -y
-pkg install vlc-qt -y
+
 pkg install abiword -y
 apt install ristretto -y
 echo -e "\n"
 echo -e "\e[32m[✓] Boxvidra Emulator Programs, Browsers, Other Applications Installed Successfully.\e[0m"
-clear
-sleep 3
 
+sleep 3
+clear
 # CREATE DESKTOP FILE
 if [ ! -d ~/Desktop ]; then
     mkdir -p ~/Desktop
 fi
 
 echo "Select a Theme to Download/Install"
-echo "1) Windows 10 Light Theme"
-echo "2) Windows 10 Dark Theme"
-echo "3) Windows 10 Red, Gaming Theme"
-echo "4) Windows 10 Purple, Space Theme"
+
+echo "1) Windows 10 Red, Gaming Theme"
+
 echo ""
 echo -n "Selected number : "
 read i
 case "$i" in
 1)
    echo -n "Installing Windows 10 theme (Light) ..."
-
+pkg upgrade 
+pkg update
    wget -q --show-progress -O Windows.10.Light.tar.xz https://github.com/AGENT404TRD/BOXVIDRA-EMULATOR/releases/download/Themes/Windows.10.Light.tar.xz
    tar -xf Windows.10.Light.tar.xz
    cd 'Windows 10 Light'
@@ -268,3 +269,4 @@ sleep 2
 echo -e "\e[32m[✓] Boxvidra Emulator Installed Successfully.\e[0m"
 echo -e "\n"
 echo "Type \"boxvidra\" To Start"
+boxvidra
