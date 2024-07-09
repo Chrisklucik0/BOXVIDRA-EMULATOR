@@ -1,4 +1,4 @@
-![logo](https://github.com/AGENT404TRD/BOXVIDRA-EMUlATOR-BETA-/assets/158003190/8ddfaff0-ca0b-4196-8f45-b935cecd37ad)
+![logo](https://github.com/Chris27524/BOXVIDRA-EMUlATOR-BETA-/assets/158003190/8ddfaff0-ca0b-4196-8f45-b935cecd37ad)
 realeses
 
 
