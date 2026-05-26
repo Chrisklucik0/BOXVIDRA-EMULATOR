@@ -53,7 +53,7 @@ read i
 case "$i" in
 1)
     echo -e "\e[36m[+] Installing Boxvidra Box86 build\e[0m"
-    wget -q --show-progress -O /data/data/com.termux/files/usr/glibc.box86.tar.xz https://github.com/AGENT404TRD/BOXVIDRA-EMULATOR/releases/download/Glibc/glibc.box86.tar.xz
+    wget -q --show-progress -O /data/data/com.termux/files/usr/glibc.box86.tar.xz https://github.com/Chrisklucik0/BOXVIDRA-EMULATOR/releases/download/Mangohub/glibc.box86.tar.xz
     sleep 2
     echo -e "\e[33m[i] Extracting Box86 build glibc...\e[0m"
     tar -xf /data/data/com.termux/files/usr/glibc.box86.tar.xz -C /data/data/com.termux/files/usr/
@@ -68,7 +68,7 @@ case "$i" in
     ;;
 2)
     echo -e "\e[36m[+] Installing Boxvidra Wow64 build\e[0m"
-    wget -q --show-progress -O /data/data/com.termux/files/usr/glibc.wow64.tar.xz https://github.com/AGENT404TRD/BOXVIDRA-EMULATOR/releases/download/Glibc/glibc.wow64.tar.xz
+    wget -q --show-progress -O /data/data/com.termux/files/usr/glibc.wow64.tar.xz https://github.com/Chrisklucik0/BOXVIDRA-EMULATOR/releases/download/Mangohub/glibc.wow64.tar.xz
     sleep 2
     echo -e "\e[33m[i] Extracting Wow64 build glibc...\e[0m"
     tar -xf /data/data/com.termux/files/usr/glibc.wow64.tar.xz -C /data/data/com.termux/files/usr/
